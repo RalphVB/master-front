@@ -1,11 +1,12 @@
 body {
     margin: 0;
     text-align: center;
+    font-family: sans-serif
 }
 
 h1 {
-    margin: auto;
-    width: 10%;
+    margin-top: 0;
+    font-family: 'Sacramento', cursive;
 }
 
 .top-container {
