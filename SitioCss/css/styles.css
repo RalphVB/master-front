@@ -27,14 +27,6 @@ h3 {
     padding-top: 200px;
 }
 
-.middle-container {
-
-}
-
-.bottom-container {
-
-}
-
 .top-cloud {
     position: absolute;
     right: 370px;
@@ -43,4 +35,23 @@ h3 {
 
 .bottom-cloud {
     position: absolute;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.img-web {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.img-js {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
 }
