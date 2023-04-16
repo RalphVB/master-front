@@ -15,6 +15,8 @@ h1 {
     width: 300px;
     background-color: blue;
     display: inline-block;
+    position: absolute;
+    right: 150px;
 }
 
 .bottom-container {
@@ -22,6 +24,6 @@ h1 {
     width: 300px;
     background-color: red;
     display: inline-block;
-    position: static;
-    top: 150px;
+    position: fixed;
+    top: 0px;
 }
