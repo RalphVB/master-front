@@ -13,11 +13,12 @@
 <body>
     <script>
 
-        getNombre();
+        getNombre(1);
 
-        function getNombre() {
+        function getNombre(position) {
             var nombre = prompt("Escribe tu primer nombre");
-            alert("Hola " + nombre.slice(0, 1).toUpperCase() + nombre.slice(1).toLowerCase());
+            alert("Hola " + nombre.slice(0, position).toUpperCase() + nombre.slice(1).toLowerCase());
+            alert("Posoción del caracter para poner en mayúsucla: " + position);
         }
 
     </script>
