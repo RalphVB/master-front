@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Básico</title>
-</head>
-<body>
 
     
-    
+</head>
+<body>
     <script>
-        var cadena =  prompt("Escribe algo:");
-        var maxNum = 100;
-        var cadenaNum = cadena.length;
-        console.log("Has escrito " + cadenaNum + " caractéres de un total de " + maxNum + " caracteres como máximo. Te quedan " + (maxNum - cadenaNum) +  " caractéres disponible.");
+        var texto = prompt("Escribe algo:");
+        var textoCortado50 = texto.slice(0,50);
+        alert(textoCortado50);
     </script>
 </body>
 </html>
