@@ -13,13 +13,23 @@
 <body>
     <script>
 
-        var invitados = ['Javier', 'Hannah', 'Emilio'];
-        var invitado = prompt("Escribe tu nombre");
+        var numeros = [];
+        var contador = 1;
 
-        if( invitados.includes(invitado) ) {
-            alert("Bienvenido a la fiesta!");
-        } else {
-            alert("No estás en la lista de invitados.");
+        function agregarElemento() {
+
+            if(contador % 3 === 0 && contador % 5 === 0) {
+                numeros.push("Multiplo 3 o 5");
+            } else if (contador % 3 === 0) {
+                numeros.push("Multiplo de 3");
+            } else if (contador % 5 === 0) {
+                numeros.push("Multiplo de 5")
+            } else {
+                numeros.push(contador);
+            }
+
+            contador++;
+            console.log(numeros);
         }
 
     </script>
