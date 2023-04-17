@@ -13,12 +13,13 @@
 <body>
     <script>
 
-        getNombre(1);
+        var invitados = ['Javier', 'Hannah', 'Emilio'];
+        var invitado = prompt("Escribe tu nombre");
 
-        function getNombre(position) {
-            var nombre = prompt("Escribe tu primer nombre");
-            alert("Hola " + nombre.slice(0, position).toUpperCase() + nombre.slice(1).toLowerCase());
-            alert("Posoción del caracter para poner en mayúsucla: " + position);
+        if( invitados.includes(invitado) ) {
+            alert("Bienvenido a la fiesta!");
+        } else {
+            alert("No estás en la lista de invitados.");
         }
 
     </script>
