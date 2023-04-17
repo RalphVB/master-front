@@ -7,11 +7,14 @@
     <title>JS Básico</title>
 </head>
 <body>
+
+    
     
     <script>
-        var nombre = prompt("¿Cual es su nombre?");
-        nombre = prompt("Hola " + nombre + ". ¿Cuál va a ser tu nuevo nombre?");
-        alert("Tu nombre es " +  nombre);
+        var cadena =  prompt("Escribe algo:");
+        var maxNum = 100;
+        var cadenaNum = cadena.length;
+        console.log("Has escrito " + cadenaNum + " caractéres de un total de " + maxNum + " caracteres como máximo. Te quedan " + (maxNum - cadenaNum) +  " caractéres disponible.");
     </script>
 </body>
 </html>
