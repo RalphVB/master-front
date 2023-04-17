@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="js/fibonacci.js"></script>
     <script>
 
         var numeros = [];
@@ -18,7 +19,7 @@
 
         function agregarElemento() {
 
-            while (contador <= 15) {
+            for(contador; contador <= 15; contador++) {
                 if (contador % 3 === 0 && contador % 5 === 0) {
                     numeros.push("Multiplo 3 o 5");
                 } else if (contador % 3 === 0) {
@@ -28,8 +29,6 @@
                 } else {
                     numeros.push(contador);
                 }
-
-                contador++;
                 console.log(numeros);
             }
         }
