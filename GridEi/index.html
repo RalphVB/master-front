@@ -12,9 +12,10 @@
             background-color: #efefef;
             margin: auto;
             display: grid;
-            grid-template-columns: min-content 1fr 1fr minmax(150px,300px);
-            grid-template-rows: 150px 150px;
-            grid-gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+
+            /* grid-template-rows: 150px 150px;
+            grid-gap: 1rem; */
         }
 
         .item {
