@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Básico</title>
 
-    
+
 </head>
+
 <body>
     <script>
-        var nombre = prompt("Escribe tu primer nombre");
-        alert("Hola " +  nombre.slice(0,1).toUpperCase() + nombre.slice(1).toLowerCase());
+
+        getNombre();
+
+        function getNombre() {
+            var nombre = prompt("Escribe tu primer nombre");
+            alert("Hola " + nombre.slice(0, 1).toUpperCase() + nombre.slice(1).toLowerCase());
+        }
+
     </script>
 </body>
+
 </html>
