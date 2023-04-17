@@ -18,18 +18,20 @@
 
         function agregarElemento() {
 
-            if(contador % 3 === 0 && contador % 5 === 0) {
-                numeros.push("Multiplo 3 o 5");
-            } else if (contador % 3 === 0) {
-                numeros.push("Multiplo de 3");
-            } else if (contador % 5 === 0) {
-                numeros.push("Multiplo de 5")
-            } else {
-                numeros.push(contador);
-            }
+            while (contador <= 15) {
+                if (contador % 3 === 0 && contador % 5 === 0) {
+                    numeros.push("Multiplo 3 o 5");
+                } else if (contador % 3 === 0) {
+                    numeros.push("Multiplo de 3");
+                } else if (contador % 5 === 0) {
+                    numeros.push("Multiplo de 5")
+                } else {
+                    numeros.push(contador);
+                }
 
-            contador++;
-            console.log(numeros);
+                contador++;
+                console.log(numeros);
+            }
         }
 
     </script>
