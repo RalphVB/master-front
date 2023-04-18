@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
+    outline: none;
 }
 
 html {
@@ -45,6 +46,73 @@ body {
     margin-right: 2rem;
 }
 /* FIN LADO IZQUIERDO */
+
+/* INICIO LADO DERECHO */
+.right {
+    position: relative;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.right-content-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.right-content-form div{
+    position: relative;
+}
+
+.right-content-form label{
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #a7a6a6;
+}
+
+.right-content-form input{
+    width: 20rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 1.5rem;
+    background-color: #fff;
+}
+
+.right-content-form input:focus{
+    background-color: #d9ebf7;
+    transition: background-color 0.3s;
+}
+
+.btn-top {
+    width: 8rem;
+    background-color: #fff;
+    color: #1aaaf5;
+    border: 0.1rem solid #1aaaf5;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-top:hover {
+    background-color: #d9ebf7;
+
+}
+
+.middle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* FIN LADO DERECHO */
 
 
 /* FIN DE LA PAGINA PRINCIPAL */
