@@ -141,7 +141,7 @@ body {
   border-radius: 4rem;
   font-size: 1.6rem;
   cursor: pointer;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
 .sign-up {
@@ -158,31 +158,111 @@ body {
 }
 
 .log-in:hover {
-    background-color: #d9ebf7;
-  }
+  background-color: #d9ebf7;
+}
 
 /* INICIO DEL PIE DE PAGINA*/
 .main-page-footer {
-    grid-column: 1/-1;
-    grid-row: 2/-1;
-    background-color: #f5f4f4;
-    padding: 1.5rem;
-    border-top: 0.1rem solid #ddd;
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  background-color: #f5f4f4;
+  padding: 1.5rem;
+  border-top: 0.1rem solid #ddd;
 }
 
 .main-page-footer ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 .main-page-footer a {
-    font-size: 1.5rem;
-    margin: 0 2rem;
-    text-decoration: none;
-    color: #444;
-    font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: 300;
 }
 /* FIN DEL PIE DE PAGINA*/
 
 /* FIN DE LA PAGINA PRINCIPAL */
+
+/* INICIO DE LA PAGINA DE REGISTRO */
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
+  grid-template-rows: repeat(2, min-content) 1fr;
+  grid-row-gap: 1.5rem;
+}
+
+/* INICIO NAVEGACIÖN */
+.login-page-nav {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background-color: #fff;
+  padding: 2.5rem 0;
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
+}
+
+.login-page-nav ul {
+  width: 100rem;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+}
+
+.login-page-nav li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.login-page-nav li:last-child {
+  margin-left: auto;
+}
+
+.login-page-nav li::after {
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  background-color: #1aa1f5;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.login-page-nav li:hover::after {
+  opacity: 1;
+}
+
+.login-page-nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.login-page-nav li:hover a {
+  color: #1aa1f5;
+}
+
+.login-page-nav .brand {
+  color: #1aa1f5;
+  font-size: 2rem;
+}
+/* FIN NAVEGACIÖN */
+
+/* INICIO LOGIN FORM */
+.login {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #fff;
+  width: 100rem;
+}
+/* FIN LOGIN FORM */
+
+/* FIN DE LA PAGINA DE REGISTRO */
