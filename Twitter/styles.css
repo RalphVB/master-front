@@ -364,7 +364,7 @@ body {
 .feeds-nav {
   position: fixed;
   width: 100%;
-  height: 7.5rem;
+  height: 6.5rem;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -447,4 +447,9 @@ body {
 }
 /* FIN NAV FEED */
 
-/* INICIO PAGINA NOTICIAS */
+/* INICIO CONTENIDO FEEDS */
+
+/* INICIO CONTENIDO FEEDS */
+
+
+/* FIN PAGINA NOTICIAS */
